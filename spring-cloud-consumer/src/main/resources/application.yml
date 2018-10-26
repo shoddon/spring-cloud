@@ -1,0 +1,20 @@
+#服务名称
+spring:
+  application:
+    name: consumer-server
+  cloud:
+    config:
+      discovery:
+        enabled: true  #启动服务发现功能，开启后才能调用其他服务
+        serviceId: eureka-server  #注册中心的服务名称
+
+#端口号
+server:
+  port: 1111
+
+#注册中心地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7777/eureka
+
