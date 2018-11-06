@@ -25,6 +25,7 @@
 		<module>../spring-cloud-config</module>
 		<module>../spring-cloud-gateway</module>
 		<module>../spring-cloud-bus</module>
+		<module>../spring-cloud-config-client</module>
 	</modules>
 
 	<properties>

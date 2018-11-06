@@ -5,7 +5,16 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/shoddon/spring-cloud/tree/master/root
+          username:
+          password:
+      label: master
 
 server:
   port: 5555
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7777/eureka/
+
+

@@ -8,7 +8,6 @@
 #          username: username
 #          password: password
 
-#config server \u9ED8\u8BA4\u4ECE\u672C\u5730src/main/resource\u76EE\u5F55\u4E0B\u68C0\u7D22\u914D\u7F6E\u6587\u4EF6
 spring:
   profiles:
     active: native
@@ -16,5 +15,9 @@ spring:
     config:
       server:
         native:
-          search-locations: file:F:/properties #\u6307\u5B9A\u914D\u7F6E\u6587\u4EF6\u4F4D\u7F6E
+          search-locations: file:F:/properties
+        default-application-name: config-server
+server:
+  port: 3333
+
 
