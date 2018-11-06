@@ -1,22 +1,25 @@
-#spring:
-#  cloud:
-#    config:
-#      server:
-#        git:
-#          uri: http://git.oschina.net/didispace/SpringCloud-Learning/
-#          search-paths: Chapter1-1-8/config-repo
-#          username: username
-#          password: password
-
 spring:
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        native:
-          search-locations: file:F:/properties
-        default-application-name: config-server
+        git:
+          uri: https://github.com/shoddon/spring-cloud/tree/master/root/
+          search-paths: config
+          username: VGtrsJA5wz7AwC2nL2lOJg==
+          password: ZTKWZ+PZFLnEZ720iw7Tyg==
+      label: master
+  application:
+    name: config-server
+
+#spring:
+#  profiles:
+#    active: native
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations: file:F:/config.properties
+#        default-application-name: config-server
 server:
   port: 3333
 
