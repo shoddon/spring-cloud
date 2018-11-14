@@ -3,10 +3,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/shaweiwei/myspringcloudconfig/
-          search-paths: myconfigpath
-          username:
-          password:
+          uri: https://github.com/shoddon/spring-cloud/
+          search-paths: root
+          username: shoddon@163.com
+          password: shoddon@163.com
       label: master
   application:
     name: config-server

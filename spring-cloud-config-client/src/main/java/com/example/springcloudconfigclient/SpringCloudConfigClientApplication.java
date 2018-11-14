@@ -16,11 +16,11 @@ public class SpringCloudConfigClientApplication {
 		SpringApplication.run(SpringCloudConfigClientApplication.class, args);
 	}
 
-	@Value("${myww}") // git配置文件里的key
-	String myww;
+	@Value("${myConfig}") // git配置文件里的key
+	String myConfig;
 
 	@RequestMapping(value = "/hi")
 	public String hi(){
-		return myww;
+		return myConfig;
 	}
 }
